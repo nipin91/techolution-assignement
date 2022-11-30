@@ -1,0 +1,14 @@
+<ul>
+    <li *ngFor="let user of userlist;" (click)="setSelectedUserData(user)">
+        <div>
+            <img src="https://png.pngtree.com/element_our/png/20181206/users-vector-icon-png_260862.jpg" />
+        </div>
+        <div style="padding-left: 30px">
+            <span><b>Name: </b>{{user.title}} {{user.first_name}} {{user.last_name}}</span><br />
+            <span><b>Email: </b>{{user.email}}</span><br />
+            <span><b>Sex: </b>{{user.gender}}</span><br />
+            <span><b>Phone: </b>{{user.phone_number}}</span><br />
+            <span><b>Username: </b>{{user.username}}</span><br />
+        </div>
+    </li>
+</ul>

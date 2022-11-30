@@ -10,13 +10,30 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": ["es2017", "dom"],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@angular-nx/techolution-ui": ["libs/techolution-ui/src/index.ts"]
+      "@angular-nx/about-us": [
+        "libs/about-us/src/index.ts"
+      ],
+      "@angular-nx/home": [
+        "libs/home/src/index.ts"
+      ],
+      "@angular-nx/shared": [
+        "libs/shared/src/index.ts"
+      ],
+      "@angular-nx/student": [
+        "libs/student/src/index.ts"
+      ]
     }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
 }

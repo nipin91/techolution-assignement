@@ -1,25 +1,30 @@
-import { NgModule } from '@angular/core';
-import { Route, RouterModule } from '@angular/router';
-import { AppComponent } from '../../../application-b/src/app/app.component';
-import { HomeComponent } from './home/home.component';
-import { NxWelcomeComponent } from './nx-welcome.component';
-
+import { NgModule } from "@angular/core";
+import { Route, RouterModule } from "@angular/router";
+import { HomeComponent } from "@angular-nx/home";
+import { AboutUsComponent } from "@angular-nx/about-us";
 export const appRoutes: Route[] = [
   {
-    path: '',
-    component: HomeComponent
+    path: "",
+    component: HomeComponent,
   },
   {
-    path: 'nx-welcome',
-    component: NxWelcomeComponent
+    path: "about-us",
+    component: AboutUsComponent,
   },
   {
-    path: 'application-b-home',
-    component: AppComponent
+    path: "student",
+    loadChildren: () =>
+      import("@angular-nx/student").then((module) => module.StudentModule),
   },
   {
-    path: '**',
-    pathMatch: 'full',
-    redirectTo: ''
-  }
+    path: "**",
+    pathMatch: "full",
+    redirectTo: "",
+  },
 ];
+
+@NgModule({
+  imports: [RouterModule.forRoot(appRoutes)],
+  exports: [RouterModule],
+})
+export class AppRouting {}
