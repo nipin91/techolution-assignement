@@ -30,11 +30,12 @@ Navigate to http://localhost:4202/ for American bank. The app will automatically
 [Student Details PAGE](https://github.com/nipin91/techolution-assignement/tree/main/libs/student/src/lib/details) : Student List is used in both the applications http://localhost:4201/student/details/:id http://localhost:4202/student/details/:id
 
 [Shared Library](https://github.com/Abdul-khaderT/Assignment/tree/main/libs/shared) : This library has all the utilities, which are shared across application.  
+
 [Header component](https://github.com/nipin91/techolution-assignement/tree/main/libs/shared/src/lib/header) : which is used in both the applications. Responsible for showing the top navbar in all the pages. Through which user can switch applications and login to the app or visit the profile page once logged in.
 
-[Footer component](https://github.com/nipin91/techolution-assignement/tree/main/libs/shared/src/lib/header) : which is used in both the applications. Responsible for showing the top navbar in all the pages. Through which user can switch applications and login to the app or visit the profile page once logged in.
+[Footer component](https://github.com/nipin91/techolution-assignement/tree/main/libs/shared/src/lib/header) : which is used in both the applications. Responsible for showing the footer in all the pages.
 
-[Application Route](https://github.com/nipin91/techolution-assignement/tree/main/libs/shared/src/lib/app.routes) : which is used in both the applications. Responsible for showing the top navbar in all the pages. Through which user can switch applications and login to the app or visit the profile page once logged in.
+[Application Route](https://github.com/nipin91/techolution-assignement/blob/main/libs/shared/src/lib/app.routes.ts) : which is used in both the applications. Responsible for router for all the pages.
 
 
 
