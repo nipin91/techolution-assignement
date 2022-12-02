@@ -1,5 +1,5 @@
 <div class="topnav">
-  <p class="app-name">{{options?.activeApplication}}</p>
+  <a [routerLink]="['/home']" class="app-name">{{options?.activeApplication}}</a>
   <div>
     <a routerActiveLink="active" [routerLink]="['/home']">Home</a>
     <a routerActiveLink="active" [routerLink]="['/student']">Students</a>
