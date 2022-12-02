@@ -1,5 +1,9 @@
 <div class="topnav">
+  <p class="app-name">{{options?.activeApplication}}</p>
+  <div>
     <a routerActiveLink="active" [routerLink]="['/home']">Home</a>
     <a routerActiveLink="active" [routerLink]="['/student']">Students</a>
-    <a routerActiveLink="active"  [routerLink]="['/about-us']">About</a>
+    <a routerActiveLink="active" [routerLink]="['/about-us']">About</a>
   </div>
+  <p style="margin-left: 40px; color: white;">Switch to:  <button (click)="setLocation()">{{options?.inactiveApplication}}</button></p>
+</div>

@@ -6,6 +6,9 @@
     "ng": "nx",
     "postinstall": "node ./decorate-angular-cli.js",
     "start": "nx serve",
+    "all-app": "nx run-many --parallel --target=serve --projects=angular,application-b",
+    "angular": "nx serve angular --port 4201",
+    "application-b": "nx serve application-b --port 4202",
     "build": "nx build",
     "test": "nx test"
   },

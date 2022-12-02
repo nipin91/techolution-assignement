@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular';
+  applicationName = 'Angular'
+  options= {
+    activeApplication: 'Angular',
+    inactiveApplication: 'Application-b',
+    redirectTo: "http://localhost:4202"
+  }
 }
